@@ -1,29 +1,35 @@
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: url(../cool-background.png);
-    background-size: cover;
+    font-family: 'Anonymous Pro', monospace;
+    background: rgb(1, 39, 18);
     color: rgb(205, 255, 243);
+    font-size: 20px;
 }
 
 .container {
-    padding: 2rem;
-
+    max-height: 100vh;
+    max-width: 100%;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 h1{
-    font-size: 2rem;
+    
+    font-size: 3rem;
     text-align: center;
     margin: 1em;
 }
 
 h2{
-    font-size: 1.75rem;
+    font-family: 'Aboreto', display;
+    font-size: 2.5rem;
     text-align: center;
     margin: 1em;
 }
 
 h3{
-    font-size: 1.5rem;
+    font-family: 'Aboreto', display;
+    font-size: 2rem;
     text-align: center;
     margin: 1em;
 }
@@ -37,57 +43,57 @@ a:hover{
     text-shadow: rgb(223, 239, 246) 1px 0 10px;
 }
 
-main p {
-    margin: 0 5em;
-    text-align: center;
+.media-links{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
-
-.projects-list {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+a img {
+    width: 50px;
+}
+.left {
+    width: 35vw;
+    text-align: center;
 }
 
 .project {
     text-align: center;
     margin: auto;
+    padding: 10px 0;
     width: 25vw;
-    border: 2px solid rgb(12, 91, 91);
+    border-bottom: 1px solid white;
 }
-
+/* 
 .project-image {
     width: 350px;
     margin: 1em;
-}
+} */
 
 .project p {
     padding: 5px;
 }
 
-@media screen and (max-width: 1550px){
-    .projects-list {
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .project {
-        width: 40vw;
-    }
-}
-
 @media screen and (max-width: 1050px){
-    .projects-list {
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
+    .container{
+        display: block;
+        justify-content: center;
     }
 
-    .project {
+    .left, .right {
         width: 80vw;
         margin: auto;
     }
 
-    .project-image {
-        width: 250px;
-        margin: 1em;
+    .project {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+       padding: 1rem;
+    }
+    h1, h2, h3 {
+        margin: 1rem 0.25rem;
     }
 }
