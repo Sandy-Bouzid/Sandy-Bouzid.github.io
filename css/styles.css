@@ -6,8 +6,6 @@ body{
 }
 
 .container {
-    max-height: 100vh;
-    max-width: 100%;
     padding: 5rem;
     display: flex;
     justify-content: space-around;
@@ -43,18 +41,18 @@ a:hover{
     text-shadow: rgb(223, 239, 246) 1px 0 10px;
 }
 
-.media-links{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-a img {
-    width: 50px;
-}
 .left {
     width: 35vw;
     text-align: center;
+    position: fixed; 
+    margin-right: 50%; 
 }
+
+.right{
+    justify-content: flex-end;
+    margin-left: 50%;
+}
+
 
 .project {
     text-align: center;
@@ -73,6 +71,16 @@ a img {
     padding: 5px;
 }
 
+.logos{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+img {
+    width: 50px;
+}
+
 @media screen and (max-width: 1050px){
     .container{
         display: block;
@@ -82,6 +90,7 @@ a img {
     .left, .right {
         width: 80vw;
         margin: auto;
+        position: relative;
     }
 
     .project {
