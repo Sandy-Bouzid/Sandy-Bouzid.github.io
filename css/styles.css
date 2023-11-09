@@ -11,6 +11,12 @@ body{
     justify-content: space-around;
 }
 
+footer{
+    text-align: center;
+    margin: 10px;
+    font-size: 0.75em;
+}
+
 h1{
     
     font-size: 3rem;
